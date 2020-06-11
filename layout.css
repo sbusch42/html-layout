@@ -1,0 +1,86 @@
+/* Main page container */
+.container {
+    margin: 0;
+    background-color: black;
+}
+
+/* Splits a page vertically into toolbar(s) and page */
+.vertical-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main toolbar */
+.toolbar {
+    background-color: #204697;
+    flex: 0 0 50px;
+    color: white;
+    padding: 4px 12px 4px 12px;
+}
+
+/* Secondary toolbar */
+.toolbar2 {
+    background-color: #f5f5f5;
+    flex: 0 0 50px;
+    padding: 4px 12px 4px 12px;
+}
+
+/* The remainder of the page */
+.page {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+/* Splits a page horizontally into sidebar and main panel */
+.horizontal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Main sidebar */
+.sidebar {
+    background-color: #e8e5da;
+    flex: 0 0 300px;
+    overflow: auto;
+}
+
+/* Secondary sidebar */
+.sidebar2 {
+    background-color: #d8d5ca;
+    flex: 0 0 300px;
+    overflow: auto;
+}
+
+/* Main panel */
+.main {
+    background-color: #f9f9f6;
+    height: 100%;
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+/* Content wrapper */
+.content {
+    margin: 8px;
+}
+
+/* A horizontal row in which the items are centered */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* A separator item in a row */
+.separator {
+    flex: 0 0 16px;
+}
+
+/* Let an item in a row take all the available space */
+.grow {
+    flex: 1 0 auto;
+}
